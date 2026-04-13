@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse all products at MamaBen's Shop - Emasatsi. Fresh milk, rice, sugar, maize flour, cooking oil, soap and daily household essentials at affordable prices.">
+    <title>All Products - MamaBen's Shop Emasatsi</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-gray-50 dark:bg-slate-950 text-gray-900 dark:text-gray-100 min-h-screen">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white dark:bg-slate-900 shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center gap-3">
+                    <img src="images/logo.png" alt="MamaBen's Shop Logo" class="h-10 w-10 rounded-full">
+                    <div>
+                        <h1 class="font-bold text-xl text-emerald-600">MamaBen's Shop</h1>
+                        <p class="text-xs text-gray-500 dark:text-gray-400 -mt-1">Emasatsi</p>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                    <a href="index.html" class="hover:text-emerald-600 transition-colors">Home</a>
+                    <a href="products.html" class="text-emerald-600 font-semibold">Products</a>
+                    <a href="about.html" class="hover:text-emerald-600 transition-colors">About</a>
+                    <a href="contact.html" class="hover:text-emerald-600 transition-colors">Contact</a>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-slate-800">
+                        🌙
+                    </button>
+                    <div onclick="toggleCart()" class="relative cursor-pointer">
+                        <span id="cart-count" class="absolute -top-2 -right-2 bg-orange-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">0</span>
+                        <span class="text-2xl">🛒</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto px-4 py-8">
+        <!-- PAGE TITLE -->
+        <h1 class="text-4xl font-bold text-center mb-8">All Products</h1>
+
+        <!-- SEARCH BAR -->
+        <div class="max-w-xl mx-auto mb-8">
+            <div class="relative">
+                <input 
+                    type="text" 
+                    id="search-input"
+                    placeholder="Search products... (e.g. milk, rice, sugar)"
+                    class="w-full px-5 py-3 pl-12 border border-gray-300 dark:border-slate-700 rounded-2xl focus:outline-none focus:border-emerald-500 bg-white dark:bg-slate-900">
+                <span class="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">🔍</span>
+            </div>
+        </div>
+
+        <!-- CATEGORY FILTER -->
+        <div class="flex flex-wrap gap-3 justify-center mb-10" id="category-filters">
+            <!-- Populated by JavaScript -->
+        </div>
+
+        <!-- PRODUCT GRID -->
+        <div id="product-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <!-- Products loaded by JavaScript -->
+        </div>
+    </div>
+
+    <!-- CART MODAL -->
+    <div id="cart-modal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50">
+        <div class="bg-white dark:bg-slate-900 w-full max-w-lg mx-4 rounded-3xl max-h-[90vh] overflow-hidden">
+            <div class="p-6 border-b dark:border-slate-700 flex justify-between items-center">
+                <h2 class="text-2xl font-bold">Your Cart</h2>
+                <button onclick="toggleCart()" class="text-3xl leading-none">×</button>
+            </div>
+            
+            <div id="cart-items" class="p-6 overflow-auto max-h-[60vh]">
+                <!-- Cart items added by JS -->
+            </div>
+
+            <div class="p-6 border-t dark:border-slate-700">
+                <div class="space-y-3 mb-6">
+                    <div class="flex justify-between">
+                        <span>Subtotal</span>
+                        <span id="subtotal" class="font-semibold">KSh 0</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span>Delivery Option</span>
+                        <select id="delivery-option" onchange="updateDeliveryFee()" class="border border-gray-300 dark:border-slate-700 rounded-lg px-3 py-1 bg-transparent">
+                            <option value="pickup">Pickup (Free)</option>
+                            <option value="delivery">Delivery</option>
+                        </select>
+                    </div>
+                    <div id="location-row" class="hidden flex justify-between items-center">
+                        <span>Delivery Location</span>
+                        <select id="delivery-location" onchange="updateDeliveryFee()" class="border border-gray-300 dark:border-slate-700 rounded-lg px-3 py-1 bg-transparent">
+                            <!-- Populated by JS -->
+                        </select>
+                    </div>
+                    <div class="flex justify-between font-semibold text-lg border-t dark:border-slate-700 pt-3">
+                        <span>Total</span>
+                        <span id="grand-total" class="text-emerald-600">KSh 0</span>
+                    </div>
+                </div>
+
+                <button onclick="placeOrder()" 
+                        class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-4 rounded-2xl text-lg transition-all">
+                    Order via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

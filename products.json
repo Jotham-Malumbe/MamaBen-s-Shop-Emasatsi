@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Fresh Milk 500ml",
+      "price": 60,
+      "category": "Dairy",
+      "image": "https://i.imgur.com/8fK2vLm.jpeg",
+      "description": "Fresh cow milk, pasteurized and packed daily"
+    },
+    {
+      "id": 2,
+      "name": "Pishori Rice 2kg",
+      "price": 280,
+      "category": "Staples",
+      "image": "https://i.imgur.com/5vN9pQz.jpeg",
+      "description": "High quality Pishori rice, clean and aromatic"
+    },
+    {
+      "id": 3,
+      "name": "Sugar 2kg",
+      "price": 220,
+      "category": "Staples",
+      "image": "https://i.imgur.com/X7pL2mK.jpeg",
+      "description": "Pure white refined sugar"
+    },
+    {
+      "id": 4,
+      "name": "Maize Flour 2kg",
+      "price": 150,
+      "category": "Staples",
+      "image": "https://i.imgur.com/9kPqR3v.jpeg",
+      "description": "Freshly milled maize flour (unga)"
+    },
+    {
+      "id": 5,
+      "name": "Cooking Oil 1L",
+      "price": 280,
+      "category": "Cooking",
+      "image": "https://i.imgur.com/4mN8xYp.jpeg",
+      "description": "Pure vegetable cooking oil"
+    },
+    {
+      "id": 6,
+      "name": "White Bread 400g",
+      "price": 55,
+      "category": "Bakery",
+      "image": "https://i.imgur.com/7vL2pQm.jpeg",
+      "description": "Fresh soft white bread"
+    },
+    {
+      "id": 7,
+      "name": "Bar Soap 800g",
+      "price": 120,
+      "category": "Household",
+      "image": "https://i.imgur.com/3pR9vNx.jpeg",
+      "description": "Quality bathing and washing soap"
+    },
+    {
+      "id": 8,
+      "name": "Tea Leaves 100g",
+      "price": 85,
+      "category": "Beverages",
+      "image": "https://i.imgur.com/6mK4vLp.jpeg",
+      "description": "Strong Kenyan tea leaves"
+    },
+    {
+      "id": 9,
+      "name": "Eggs Tray (30pcs)",
+      "price": 320,
+      "category": "Dairy",
+      "image": "https://i.imgur.com/2nP8vQm.jpeg",
+      "description": "Fresh farm eggs"
+    },
+    {
+      "id": 10,
+      "name": "Salt 1kg",
+      "price": 45,
+      "category": "Staples",
+      "image": "https://i.imgur.com/9xL5vKp.jpeg",
+      "description": "Iodized table salt"
+    },
+    {
+      "id": 11,
+      "name": "Washing Powder 1kg",
+      "price": 180,
+      "category": "Household",
+      "image": "https://i.imgur.com/4pR7vNx.jpeg",
+      "description": "Powerful laundry detergent"
+    },
+    {
+      "id": 12,
+      "name": "Tomato Paste 400g",
+      "price": 95,
+      "category": "Cooking",
+      "image": "https://i.imgur.com/8vM3pLq.jpeg",
+      "description": "Thick and rich tomato paste"
+    },
+    {
+      "id": 13,
+      "name": "Fresh Milk 1L",
+      "price": 110,
+      "category": "Dairy",
+      "image": "https://i.imgur.com/7kP2vLm.jpeg",
+      "description": "Fresh cow milk, 1 litre pack"
+    },
+    {
+      "id": 14,
+      "name": "Royco Mchuzi Mix 100g",
+      "price": 65,
+      "category": "Cooking",
+      "image": "https://i.imgur.com/5mN9vQp.jpeg",
+      "description": "All-purpose seasoning"
+    },
+    {
+      "id": 15,
+      "name": "Toilet Tissue 4 Rolls",
+      "price": 120,
+      "category": "Household",
+      "image": "https://i.imgur.com/3pL8vNx.jpeg",
+      "description": "Soft and strong toilet paper"
+    }
+  ]
+}
